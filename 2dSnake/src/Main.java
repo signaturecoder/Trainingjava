@@ -7,7 +7,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		JFrame obj = new JFrame();
 		GamePlay gameplay = new GamePlay();
-		
+	
 		obj.setBounds(10, 10, 905, 700);
 		obj.setBackground(Color.darkGray);
 		obj.setResizable(false);

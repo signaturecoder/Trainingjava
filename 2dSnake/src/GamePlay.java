@@ -80,16 +80,16 @@ public class GamePlay extends JPanel implements KeyListener,ActionListener{
 		
 		//draw background for gameplay
 		g.setColor(Color.black);
-		g.fillRect(25, 75,850, 575);
-        
+		g.fillRect(25, 75,850, 575);   //x,y,width,height
+       
 		//draw scores
 		g.setColor(Color.white);
-		g.setFont(new Font("areial",Font.PLAIN,14));
-		g.drawString("Scores :"+ scores , 780, 30);
+		g.setFont(new Font("arial",Font.PLAIN,14));
+		g.drawString("Scores :"+ scores , 780, 30);  // width and height //from left tot right and from top to bottom
 		
 		//draw length of snake
 		g.setColor(Color.white);
-		g.setFont(new Font("areial",Font.PLAIN,14));
+		g.setFont(new Font("arial",Font.PLAIN,14));
 		g.drawString("Length :"+ lengthofsnake , 780, 50);
 		
 		rightmouth = new ImageIcon("rightmouth.png");
@@ -120,7 +120,7 @@ public class GamePlay extends JPanel implements KeyListener,ActionListener{
 		}
 		
 		enemyimage = new ImageIcon("enemy.png");
-		if((enemyxpos[xpos] == snakexlength[0]) && enemyypos[ypos] == snakeylength[0]){
+		if((enemyxpos[xpos] == snakexlength[0] && enemyypos[ypos] == snakeylength[0])){
 			scores++;
 			lengthofsnake++;
 			xpos = random.nextInt(34);
@@ -140,7 +140,7 @@ public class GamePlay extends JPanel implements KeyListener,ActionListener{
 				g.drawString("Game Over" , 300, 300);
 				
 				g.setFont(new Font("arial",Font.BOLD,25));
-				g.drawString("Space to RESTART" , 350, 340);
+				g.drawString("Space to RESTART" , 300, 340);
 
 			}
 		}
